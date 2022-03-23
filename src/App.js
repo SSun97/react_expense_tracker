@@ -10,6 +10,27 @@ const DUMMY_EXPENSES = [
     // date: new Date(2020, 7, 14),
     date: new Date(2020, 7, 14),
   },
+  {
+    id: "e15",
+    title: "Cooker",
+    amount: 119.99,
+    // date: new Date(2020, 7, 14),
+    date: new Date(2020, 4, 14),
+  },
+  {
+    id: "e16",
+    title: "Book",
+    amount: 119.99,
+    // date: new Date(2020, 7, 14),
+    date: new Date(2019, 2, 14),
+  },
+  {
+    id: "e16",
+    title: "Tablet",
+    amount: 339.99,
+    // date: new Date(2020, 7, 14),
+    date: new Date(2022, 10, 14),
+  },
   { id: "e2", title: "New TV", amount: 799.49, date: new Date(2021, 2, 12) },
   {
     id: "e3",
@@ -33,6 +54,12 @@ function App() {
   };
   return (
     <div>
+      <div style={{color:"white", textAlign:"center"}}>
+        <h2>Expense Tracker Demo Instruction</h2>
+        <p>- Click button Add New Expense</p>
+        <p>- Input Data and click Add Expense</p>
+        <p>- Choose the year on the dropdown list</p>
+      </div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expense items={expenses} />
     </div>
